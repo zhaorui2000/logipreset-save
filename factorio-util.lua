@@ -2,7 +2,8 @@ local util = {
   version = "1.0.0"
 }
 
-local ENV = ""
+local config = require("config")
+local ENV = config.ENV
 -- factorio log info block
 function util.debug(msg)
   if ENV ~= "debug" then
