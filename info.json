@@ -1,0 +1,10 @@
+{
+  "name": "logipreset-save",
+  "version": "0.1.1",
+  "title": "Logistic Preset Save",
+  "author": "",
+  "description": "读取背包的物流组，通过字符串形式导出导入",
+  "factorio_version": "2.0",
+  "dependencies": ["base >= 2.0.0"],
+  "homepage": ""
+}
