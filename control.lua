@@ -26,6 +26,9 @@ local function get_player_logistic_presets_text(player)
 
   -- 获取玩家的请求点
   local requester_point = player.get_requester_point()
+  if not requester_point then
+    return nil
+  end
   local logistic_presets = {}
 
   -- 遍历所有物流组
@@ -57,6 +60,9 @@ local function set_player_logistic_presets(player, presets_text)
 
   -- 获取玩家的请求点
   local requester_point = player.get_requester_point()
+  if not requester_point then
+    return
+  end
 
   -- 解码配置文本
   presets_text = helpers.decode_string(presets_text)
